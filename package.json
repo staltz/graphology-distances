@@ -1,0 +1,30 @@
+{
+  "name": "graphology-distances",
+  "version": "1.0.0",
+  "description": "Calculate euclidean distances of edges for graphology",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/staltz/graphology-distances.git"
+  },
+  "keywords": [
+    "graphology",
+    "graph"
+  ],
+  "author": "staltz.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/staltz/graphology-distances/issues"
+  },
+  "homepage": "https://github.com/staltz/graphology-distances",
+  "dependencies": {
+    "graphology-utils": "1.5.0"
+  },
+  "devDependencies": {
+    "graphology": "0.14.1",
+    "tape": "^4.9.0"
+  }
+}
