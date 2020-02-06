@@ -1,6 +1,6 @@
 {
   "name": "graphology-distances",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculate euclidean distances of edges for graphology",
   "main": "index.js",
   "scripts": {
