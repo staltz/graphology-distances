@@ -8,13 +8,9 @@ function abstractDistances(assign, graph) {
   }
 
   const results = {};
-  graph.forEachEdge((key, _attrs, source, target) => {
-    const x1 = graph.getNodeAttribute(source, 'x');
-    const y1 = graph.getNodeAttribute(source, 'y');
-    const x2 = graph.getNodeAttribute(target, 'x');
-    const y2 = graph.getNodeAttribute(target, 'y');
-    const dx = x1 - x2;
-    const dy = y1 - y2;
+  graph.forEachEdge((key, _attrs, _source, _target, sourceAttrs, targetAttrs) => {
+    const dx = sourceAttrs.x - targetAttrs.x;
+    const dy = sourceAttrs.y - targetAttrs.y;;
     const distance = Math.sqrt(dx * dx + dy * dy);
     if (assign) graph.setEdgeAttribute(key, 'distance', distance);
     else results[key] = distance;
